@@ -1,0 +1,29 @@
+name:                vector-alloc
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/chpatrick/vector-alloc#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Patrick Chilton
+maintainer:          chpatrick@gmail.com
+copyright:           2017 Patrick Chilton
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Vector.Alloc
+                       Data.Vector.Alloc.Mutable
+  build-depends:       base >= 4.7 && < 5,
+                       vector,
+                       deepseq,
+                       primitive
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/chpatrick/vector-alloc
